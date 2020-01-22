@@ -32,8 +32,11 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
+let doSomethingExtraCool = function() {
+  console.log('something extra cool!');
+}
 
-
+doSomethingExtraCool();
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -53,6 +56,10 @@ setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
+let sayHiAgain = function() {
+  alert('Hi, again World!');
+}
+setTimeout(sayHiAgain, 2000);
 
 // -----------------------------------------------
 
@@ -82,7 +89,13 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+  //[c]: Z then Y;
+  //First, 'X' never gets logged. The variable letter gets declared and set to X initially,
+  //but is not called on until after it has been given a new value. If the function had been declared
+  //above the setTimeout I think it would be different.
+  //The Z will come before the Y because JavaScript doesn't have to wait for that setTimeout to complete
+  //before the next "block" of code is run. I think this has something to do with synchronous...actions? in JavaScript.
+  //
 
 // -----------------------------------------------
 
@@ -104,7 +117,7 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+let reverseThisStr = (str) => { let arr; arr = str.split(''); arr = arr.reverse(); str = arr.join(""); return str; };
 
 // -----------------------------------------------
 
@@ -138,6 +151,9 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+let spanishColors = function(colorName) {
+  let color = {rojo: "#ff0000", blanco: "#ffffff", azul: "#0000ff", verde: "#00ff00", negro: "#000000"}
+};
 
 
 // -----------------------------------------------
@@ -155,7 +171,9 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
+let spam
 
+spam = "ham and eggs";
 
 // -----------------------------------------------
 
@@ -225,7 +243,11 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
-
+let twoPlusTwoAgain
+let addTheseNumbers = function(numA, numB) {
+  console.log(numA + numB);
+};
+twoPlusTwoAgain = addNumbers(2, 2);
 
 // -----------------------------------------------
 
