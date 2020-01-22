@@ -123,21 +123,10 @@
   // ---------------------
 
   //need to iterate through the array counting length of each item.
-  //
-  let findLongestWord = (arr) => {
-    let result = 0;
-    for (let i = 0; i < arr.length; i++); {
-      if (arr[i].length > result); {
-        result = arr[i].length + 1;
-      } return result;
-    }
-  }
+  //how do I count the length of each string in an array??
 
 
-
-
-  console.log(findLongestWord(['see', 'to', 'juuuuuuuust', 'words', 'new', 'okay']));
-
+console.log(findLongestWord(['arrays' 'of' 'strings'])
 
 
   // ---------------------
