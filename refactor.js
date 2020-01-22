@@ -212,6 +212,8 @@ var callTenTimes = function(callback) {
 
 // HINT: "global scope"
 
+//test change
+
 var score = 0;
 
 var increaseScore = function() {
