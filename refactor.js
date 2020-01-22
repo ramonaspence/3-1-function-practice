@@ -213,19 +213,25 @@ var callTenTimes = function(callback) {
 // HINT: "global scope"
 
 //test change
+(function() {
+  'use strict';
 
-var score = 0;
 
-var increaseScore = function() {
-  score++;
-};
+  var score = 0;
 
-var decreaseScore = function() {
-  score--;
-};
+  var increaseScore = function() {
+    score++;
+  };
+
+  var decreaseScore = function() {
+    score--;
+  };
+
+})();
+
 
 // Put your answer below -------------------------
-
+//function() { 'use strict'}
 
 // -----------------------------------------------
 
@@ -271,6 +277,9 @@ twoPlusTwoAgain = addNumbers(2, 2);
 var speed = 0;
 
 var accelerate = function(amount) {
+  // undefined || 1 returns 1 (example of amount not being passed in)
+  // 3 || 1 returns 3 (example of amount of 3 being passed in)
+  amount = amount || 1;
   speed += amount;
 };
 

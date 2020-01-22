@@ -36,8 +36,8 @@
 
   // OR**********
   // let maxOfThree = (num1, num2, num3) => {
-      // return Math.max(num1, num2, num3);
-// }
+  // return Math.max(num1, num2, num3);
+  // }
 
 
   // ---------------------
@@ -74,19 +74,19 @@
   rovarspraket('im a string'); //I've got this to console log the first letter and concatenate a new string correctly.
   //but what about the rest of them?
 
-// let rovarspraket = (str) => {
-//    let consonants = "bcdfghjklmnpqrstvwxyz";
-//    let result = '';
-//
-//    for (let i = 0; i < str.length; i++) {
-//      if (!consonants.includes(str[i])) {
-//        result += str[i];
-//      } else {
-//        result += str[i] + 'o' + str[i];
-//      }
-//    }
-//    return result;
-// }
+  // let rovarspraket = (str) => {
+  //    let consonants = "bcdfghjklmnpqrstvwxyz";
+  //    let result = '';
+  //
+  //    for (let i = 0; i < str.length; i++) {
+  //      if (!consonants.includes(str[i])) {
+  //        result += str[i];
+  //      } else {
+  //        result += str[i] + 'o' + str[i];
+  //      }
+  //    }
+  //    return result;
+  // }
 
 
   // ---------------------
@@ -121,12 +121,22 @@
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
+
+  //need to iterate through the array counting length of each item.
+  //
   let findLongestWord = (arr) => {
+    let result = 0;
+    for (let i = 0; i < arr.length; i++); {
+      if (arr[i].length > result); {
+        result = arr[i].length + 1;
+      } return result;
+    }
+  }
 
 
-}
 
-  findLongestWord(['see', 'to', 'juuuuuuuust', 'words', 'new', 'okay']);
+
+  console.log(findLongestWord(['see', 'to', 'juuuuuuuust', 'words', 'new', 'okay']));
 
 
 
@@ -134,13 +144,25 @@
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
 
+  let filterLongWords = (arr, i) => {
+    for (let j = 0; j < arr.length; i++);
+      if arr[i].length > i;
+      return;
+  }
 
-
+  console.log(filterLongWords(["this", "an", "interesting", "topic"], 5);
 
 
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
+
+  let charFreq = (str) => {
+    let result = {};
+    if
+
+
+  }
 
   console.assert(charFreq('aaabbeeeffl').a === 3);
 
