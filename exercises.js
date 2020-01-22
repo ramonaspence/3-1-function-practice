@@ -9,12 +9,14 @@
     if (num1 < num2) {
       console.log(num2);
 
-    } else if (num1 > num2) {
+    } else {
       console.log(num1);
     }
 
   }
   max(10, 20);
+
+  // console.assert(max(10, 12) === 10, 'error: max function'); //lets you log into console only if returns false.
 
 
   // ---------------------
@@ -31,6 +33,11 @@
     }
   }
   maxOfThree(20, 3, 12);
+
+  // OR**********
+  // let maxOfThree = (num1, num2, num3) => {
+      // return Math.max(num1, num2, num3);
+// }
 
 
   // ---------------------
@@ -67,7 +74,19 @@
   rovarspraket('im a string'); //I've got this to console log the first letter and concatenate a new string correctly.
   //but what about the rest of them?
 
-
+// let rovarspraket = (str) => {
+//    let consonants = "bcdfghjklmnpqrstvwxyz";
+//    let result = '';
+//
+//    for (let i = 0; i < str.length; i++) {
+//      if (!consonants.includes(str[i])) {
+//        result += str[i];
+//      } else {
+//        result += str[i] + 'o' + str[i];
+//      }
+//    }
+//    return result;
+// }
 
 
   // ---------------------
@@ -122,5 +141,9 @@
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
+
+  console.assert(charFreq('aaabbeeeffl').a === 3);
+
+
 
 })();
