@@ -124,9 +124,18 @@
 
   //need to iterate through the array counting length of each item.
   //how do I count the length of each string in an array??
+let findLongestWord = (arr) => {
+  let j = 0;
 
-
-console.log(findLongestWord(['arrays' 'of' 'strings'])
+  for (let i = 0; i < arr.length; i++){
+      if (arr[i].length > j) {
+        j = arr[i].length;
+      }
+    }
+    console.log(j);
+    return j;
+  }
+findLongestWord(['arrays', 'of', 'strings']);
 
 
   // ---------------------
@@ -134,12 +143,18 @@ console.log(findLongestWord(['arrays' 'of' 'strings'])
   // ---------------------
 
   let filterLongWords = (arr, i) => {
-    for (let j = 0; j < arr.length; i++);
-      if arr[i].length > i;
-      return;
+    let theLongest = [];
+    for (let j = 0; j < arr.length; j++){
+      if (arr[j].length > i){
+        theLongest.push(arr[j]);
+      }
+
+    }
+
+    return theLongest
   }
 
-  console.log(filterLongWords(["this", "an", "interesting", "topic"], 5);
+  console.log(filterLongWords(["this", "an", "interesting", "topic"], 5));
 
 
   // ---------------------
@@ -148,8 +163,17 @@ console.log(findLongestWord(['arrays' 'of' 'strings'])
 
   let charFreq = (str) => {
     let result = {};
-    if
-
+    for (let i = 0; i < str.length; i++) {
+      if (result[str[i]]) {
+        // character exists
+        result[str[i]] += 1
+      } else {
+         // character does not exist
+        result[str[i]] = 1
+      }
+    }
+    console.log(result);
+    return result;
 
   }
 
